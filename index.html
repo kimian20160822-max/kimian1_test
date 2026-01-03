@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛집을 찾아서</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Malgun Gothic', dotum, sans-serif;
+            overflow: hidden; /* 스크롤 방지 */
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* 왼쪽 사이드바 영역 */
+        .sidebar {
+            width: 100px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #ddd;
+        }
+
+        .logo-box {
+            width: 100%;
+            height: 100px;
+            background-color: #1a3322; /* 로고 배경색 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #d4af37;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .nav-text {
+            margin-top: 20px;
+            writing-mode: horizontal-tb; /* 텍스트 방향 */
+            text-align: center;
+            line-height: 2.5;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* 오른쪽 메인 영역 */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 상단 제목 */
+        .header-title {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: 300;
+            border-bottom: 1px solid #000;
+        }
+
+        /* 이미지 영역 */
+        .image-section {
+            flex: 1;
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80'); /* 임시 음식 이미지 */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-box">
+                <div>
+                    <img src="https://img.icons8.com/ios-filled/50/d4af37/apple.png" alt="logo" style="width: 30px;"><br>
+                    WATERMELON
+                </div>
+            </div>
+            <div class="nav-text">
+                우리<br>이안이와<br>이음이가<br>좋아하는<br>맛집<br>모음
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header-title">
+                맛집을 찾아서
+            </div>
+            <div class="image-section">
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>s
